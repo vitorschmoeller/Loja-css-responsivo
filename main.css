@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body {
+    background-color: #f3f4f5;
+    
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-flex{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%) ;
+    column-gap: 0;
+    
+
+}
+
+header {
+    background-color: #3e77ce;
+    padding: 20px;
+    color: #ecf0f1;
+    width: 100%;
+    margin-bottom: 3em;
+}
+h1{
+    font-size: 3em;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.loja img {
+    
+    margin-bottom: 30px;
+}
+
+h2{
+    padding: 16px;
+    margin-bottom: 1.7em;
+    border-bottom: solid #3e77ce;
+    font-style: italic;
+    font-weight: bold;
+    color: #3e77ce;
+}
+.produtos img {
+    margin-bottom: 1em;
+}
+
+.produtos h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.7em;
+}
+
+.produtos {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1%;
+}
+.produtos img {
+    width: 100%;
+    
+    
+}
+
+.produtos-venda button {
+    margin-top: 1em;
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    background-color: #3e77ce;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    
+}
+
+/*.template {
+    width: 640px;
+} */
+
+@media screen and (max-width: 1023px) and (min-width: 641px) {
+    .container {
+        max-width: 90%;
+        display: block;
+    }
+
+    .container-flex {
+        display: block;
+    }
+    .loja img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .produtos{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .produtos-venda img {
+        width: 100%;
+        height: 400px;
+        
+    }
+    h3{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 640px){
+
+    .container {
+        max-width: 90%;
+        
+    }
+    .container-flex {
+        display: block;
+    }
+    .loja img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .produtos{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .produtos-venda img {
+        width: 100%;
+        height: 400px;
+        
+    }
+
+    h3{
+        width: 100%;
+    }
+}
+
